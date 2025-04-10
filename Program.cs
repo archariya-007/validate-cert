@@ -44,11 +44,16 @@ class CertificateValidator
         //}
 
         Console.WriteLine("Certificate is valid.");
+        Console.WriteLine("Press any key to exit...");
+        Console.ReadKey();
     }
 
     static void Main(string[] args)
     {
-        string certPath = @"\\wex-share-d01.mbe.local\Certificates\gsassocert-bad.cer";
+        string certPath = @"C:\health-repos\POCs\validate-cert\justnotdpad.cer";
+        // @"\\wex-share-d01.mbe.local\Certificates\gsassocert-bad.cer";
+
+
         try
         {
             ValidateCertificate(certPath);
